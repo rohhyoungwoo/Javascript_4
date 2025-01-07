@@ -6,9 +6,9 @@ const addbutton = document.querySelector("#add-button");
 
 //항목 추가 함수
 function addItem() {
-  const prompt = prompt("추가할 할일을 입력하세요:");
+  let newItemtext = prompt("추가할 할일을 입력하세요:");
   // document.write(newItemtext);
-  const newItemtext = prompt.value.trim(); //입력값 가져오기 
+  // const newItemtext = prompt.value.trim(); //입력값 가져오기 
 // newItemtext.value();
 
   // if (newItemtext === ""){
@@ -18,7 +18,8 @@ function addItem() {
   
   //새로운 li요소 추가
   const li = document.createElement("li");
-  li.innerHTML = `${newItemtext} <button class="delete">삭제</button>`;
+  li.innerHTML = `${newItemtext} <button class="delete">삭제</button><hr>`;
+  // li.innerHTML = `${newItemtext} `;
 
   //리스트에 추가
   tasklist.appendChild(li);
@@ -40,9 +41,7 @@ function deleteItem(event){
 // ul id = "task-list"에 추가
 document.addEventListener("DOMContentLoaded", function(){
 
-  addbutton.addEventListener("click", function(event){
-    addItem();
-  });
+  addbutton.addEventListener("click", addItem);
 });
 
 // botton id = "add-button" 할일 추가 버튼 클릭시

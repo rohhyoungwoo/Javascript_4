@@ -26,7 +26,7 @@ nav > ul{
   margin: 0;
   padding: 0;
 }
-li{
+nav > ul > li{
   /* border: 1px solid white; */
   list-style-type: none;
   text-decoration: underline;
@@ -39,14 +39,14 @@ a{
 }
 main{
   background-color: white;
-  height: 15vh;
+  /* height: 15vh; */
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px auto;
   /* border: 1px solid black; */
-  line-height: 90px;
+  /* line-height: 90px; */
 }
 
 /* h2 { */
@@ -58,18 +58,41 @@ main{
 /* } */
 
 main{
-  position: relative;
+  /* position: relative; */
 }
 button {
   /* justify-content: center; */
   /* align-items: center; */
   /* text-align: center; */
   font-weight: bold;
-  position: absolute;
-  top: 90px;
+  /* position: absolute; */
+  /* top: 90px; */
 }
 
 /* main > ul{
   width: 30px;
   height: 30px;
 } */
+
+main > ul > li {
+  list-style-type: none;
+/* position: absolute; */
+/* background-color: bisque; */
+/* text-decoration: underline;
+text-underline-offset: 15px; */
+font-weight: bold;
+text-align: start;
+/* width: 30%; */
+height: 30%;
+/* display: flex;
+flex-direction: column; */
+}
+
+.delete{
+  justify-self: right;
+}
+hr{
+  margin: 0;
+  padding: 0;
+}
+
